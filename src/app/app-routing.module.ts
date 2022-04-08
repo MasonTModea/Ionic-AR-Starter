@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'ar-modal',
+    loadChildren: () => import('./ar-modal/ar-modal.module').then( m => m.ArModalPageModule)
+  },
 ];
 
 @NgModule({
