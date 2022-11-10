@@ -10,7 +10,7 @@ jobs:
       with:
         type: 'tar'
         filename: 'release.tar'
-        path: './LibraryChart/libs'
+        path: './ios/'
     - name: Upload Release
       uses: ncipollo/release-action@v1
       with:
